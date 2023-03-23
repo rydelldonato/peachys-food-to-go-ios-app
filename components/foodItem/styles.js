@@ -24,6 +24,11 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     position: "absolute",
   },
+  buttonContainer: {
+    position: "absolute",
+    bottom: 90,
+    width: "100%",
+  }
 });
 
 export default styles;

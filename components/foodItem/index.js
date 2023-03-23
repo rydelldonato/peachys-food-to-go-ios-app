@@ -3,32 +3,37 @@ import React from "react";
 import styles from "./styles";
 import StyledButton from "../StyledButton";
 
-export default function FoodItem() {
+export default function FoodItem(props) {
+
+  const {name, price, image} = props;
+
   return (
     <View style={styles.foodContainer}>
       <ImageBackground
-        source={require("../../assets/images/sisigTacoCombo.jpg")}
+        source={image}
         style={styles.image}
       />
       <View style={styles.titles}>
-        <Text style={styles.title}>Sisig Tacos</Text>
-        <Text style={styles.subtitle}>Starting at $14.99</Text>
+        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.subtitle}>{price}</Text>
       </View>
 
-      <StyledButton
-        type="primary"
-        content="Order Now"
-        onPress={() => {
-          console.warn("Order now was pressed");
-        }}
-      />
-      <StyledButton
-        type="Secondary"
-        content="View Menu"
-        onPress={() => {
-          console.warn("View menu was pressed");
-        }}
-      />
+      <View style={styles.buttonContainer}>
+        <StyledButton
+          type="primary"
+          content="Order Now"
+          onPress={() => {
+            console.warn("Order now was pressed");
+          }}
+        />
+        <StyledButton
+          type="Secondary"
+          content="View Menu"
+          onPress={() => {
+            console.warn("View menu was pressed");
+          }}
+        />
+      </View>
     </View>
   );
 }
