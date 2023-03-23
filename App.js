@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import FoodItem from './components/foodItem';
+import FoodItem from './components/FoodItem';
 
 export default function App() {
   return (
