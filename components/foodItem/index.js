@@ -5,7 +5,7 @@ import StyledButton from "../StyledButton";
 
 export default function FoodItem(props) {
 
-  const {name, price, image} = props;
+  const {name, price, image, info} = props.food;
 
   return (
     <View style={styles.foodContainer}>
@@ -16,6 +16,7 @@ export default function FoodItem(props) {
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.subtitle}>{price}</Text>
+        <Text style={styles.info}>{info}</Text>
       </View>
 
       <View style={styles.buttonContainer}>
