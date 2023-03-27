@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./styles";
 import StyledButton from "../StyledButton";
 
-export default function FoodItem(props) {
+const FoodItem = (props) => {
 
   const {name, price, image, info} = props.food;
 
@@ -38,3 +38,5 @@ export default function FoodItem(props) {
     </View>
   );
 }
+
+export default FoodItem;
