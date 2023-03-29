@@ -6,7 +6,7 @@ export default [{
 },{
     name: "Sisig over Garlic Rice",
     price: "Starting from $11.99",
-    image: require("../../assets/images/garlicOverRice.png"),
+    image: require("../../assets/images/sisigGarlicRice.jpg"),
     info: "Garlic rice topped with pork or chicken"
 },{
     name: "Crispy Sisig Street Tacos",

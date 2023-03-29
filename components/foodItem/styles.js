@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
+    color: "#171A20",
     fontSize: 40,
     fontWeight: "500",
   },
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
+    // resizeMode: "cover",
     position: "absolute",
   },
   buttonContainer: {
